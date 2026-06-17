@@ -61,10 +61,11 @@ ai_columns = [
 ]
 
 for col in ai_columns:
-    final_df.loc[:, col] = (
+    final_df[col] = (
         final_df[col]
         .fillna("Not Analyzed")
     )
+
 
 # =====================================
 # SAVE FINAL DATASET

@@ -1685,7 +1685,7 @@ def load_data():
 
         if col in df.columns:
 
-            df.loc[:, col] = pd.to_datetime(
+            df[col] = pd.to_datetime(
                 df[col],
                 errors="coerce"
             )
