@@ -93,4 +93,6 @@ Thumbs.db
 # Large Datasets / Models
 data/raw/*.csv
 data/processed/*.csv
+!data/processed/final_dashboard_dataset.csv
 models/*.pkl
+
